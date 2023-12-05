@@ -13,12 +13,36 @@
     <form id="crud-form">
         <label for="nombre">Nombre: </label>
         <input type="text" id="nombre">
+        <br>
         <label for="apellido">Apellido: </label>
         <input type="text" id="apellido">
+        <br>
         <label for="edad">Edad: </label>
         <input type="number" id="edad">
         <button type="button" onclick="crearRegistro()">Crear</button>
+        <br>
     </form>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAYYHfHIO3GjsNFLJ1DoNzqjWAr21ZoEVg",
+          authDomain: "proyecto-falcon25.firebaseapp.com",
+          databaseURL: "https://proyecto-falcon25-default-rtdb.firebaseio.com",
+          projectId: "proyecto-falcon25",
+          storageBucket: "proyecto-falcon25.appspot.com",
+          messagingSenderId: "897557394941",
+          appId: "1:897557394941:web:a995638cdfb6b7e1735594"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
   
 </body>
 </html>
