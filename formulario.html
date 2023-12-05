@@ -56,6 +56,16 @@
 
             console.log(nombre, apellido, edad);
 
+            push(
+                ref(database, 'direccion'),
+                {
+                    name: nombre,
+                    last_name: apellido,
+                    age: edad 
+                }
+
+            );
+
         }
       </script>
   
